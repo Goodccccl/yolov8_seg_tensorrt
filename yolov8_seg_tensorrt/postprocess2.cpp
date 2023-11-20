@@ -25,7 +25,7 @@ std::vector<cv::Mat> get_Masks(cv::Mat inferMasks, cv::Mat proto)
 	cv::Mat Masks = matmulRes.reshape(4, { 160, 160 });
 	std::vector<cv::Mat> maskChannels;
 	cv::split(Masks, maskChannels);
-	return maskChannels;
+	return maskChannels£»
 }
 
 std::vector<cv::Mat> cropUp_Masks(std::vector<cv::Mat> &Masks, std::vector<Anchor> nms_result)
