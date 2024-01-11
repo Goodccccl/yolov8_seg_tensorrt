@@ -67,6 +67,8 @@ bool normalization(cv::Mat src_resized, float* dst_data)
 	return true;
 }
 
+
+
 float* preprocess(std::string image_path, Parameters params, std::vector<YOLOV8ScaleParams> &vetyolovtparams)
 {
 	float* data = (float*)malloc(sizeof(float) * params.input_channels * params.target_w * params.target_h);
